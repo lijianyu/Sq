@@ -2,7 +2,7 @@ package prototypez.github.io.sq.demo.processes.login.steps
 import kotlinx.android.synthetic.main.fragment_sms_verify.*
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

@@ -2,7 +2,7 @@ package prototypez.github.io.sq.demo.processes.pwdReset
 
 import android.app.Activity
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import io.github.prototypez.savestate.core.annotation.AutoRestore
 import io.reactivex.ObservableTransformer
 import prototypez.github.io.sq.ActivityResult

@@ -2,9 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 27
-
-
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         minSdkVersion 17
@@ -12,7 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -23,24 +22,27 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
 }
 
 publish {
-    userOrg = 'prototypez'
-    groupId = 'io.github.prototypez'
+    userOrg = 'jy'
+    groupId = 'orj.jy'
     artifactId = 'sq'
     publishVersion = '1.2'
     desc = 'Comfortable way to use startActivityForResult and onActivityResult with RxJava!'
-    website = 'https://github.com/PrototypeZ/Sq'
+    website = 'https://github.com/lijianyu/Sq'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'io.reactivex.rxjava2:rxjava:2.0.7'
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test:runner:1.1.0-beta02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-beta02'
 }

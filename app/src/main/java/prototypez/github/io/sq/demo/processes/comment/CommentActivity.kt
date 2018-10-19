@@ -3,7 +3,7 @@ package prototypez.github.io.sq.demo.processes.comment
 import android.app.Activity
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import io.reactivex.ObservableTransformer
 import kotlinx.android.synthetic.main.activity_comment.*
 import prototypez.github.io.sq.Sq

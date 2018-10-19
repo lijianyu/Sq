@@ -1,9 +1,9 @@
 package prototypez.github.io.sq.fragment;
 
 import android.content.Intent;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatActivity;
 
 import io.reactivex.Observable;
 import io.reactivex.subjects.PublishSubject;

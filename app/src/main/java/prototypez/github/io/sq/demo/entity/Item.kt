@@ -1,6 +1,6 @@
 package prototypez.github.io.sq.demo.entity
 
-import android.support.annotation.DrawableRes
+import androidx.annotation.DrawableRes
 
 import java.io.Serializable
 

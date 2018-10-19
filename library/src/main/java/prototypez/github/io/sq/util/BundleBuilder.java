@@ -4,8 +4,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Parcelable;
-import android.os.PersistableBundle;
-import android.support.annotation.RequiresApi;
+
+import androidx.annotation.RequiresApi;
 import android.util.Size;
 import android.util.SizeF;
 import android.util.SparseArray;
